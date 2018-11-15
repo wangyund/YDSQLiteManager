@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<orm tableName="student"
+     className="YDTableInfo"
+     daoName="YDTableInfoDao">
+     
+     <!--每一张表对应了很多字段,字段对应属性-->
+     <key
+     column="student_id"
+     columnType="integer"
+     property="tableId"
+     propertyType="Int"
+     identity="true"
+     isNull="false"/>
+     
+     <!--普通字段-->
+     <item
+     column="student_name"
+     columnType="text"
+     property="tableName"
+     propertyType="String"
+     isNull="false"/>
+     
+     <item
+     column="student_age"
+     columnType="integer"
+     property="tableAge"
+     propertyType="Int"
+     isNull="true"/>
+
+</orm>

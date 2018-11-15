@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A33E17B21959BC800B0469B /* YDTableInfo.orm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A33E17621959BC800B0469B /* YDTableInfo.orm.xml */; };
+		5A33E17C21959BC800B0469B /* YDBuilderSQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E17821959BC800B0469B /* YDBuilderSQLController.swift */; };
+		5A33E17D21959BC800B0469B /* YDTableInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E17A21959BC800B0469B /* YDTableInfo.swift */; };
+		5A33E19F21959BDF00B0469B /* YDBaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18021959BDF00B0469B /* YDBaseDao.swift */; };
+		5A33E1A021959BDF00B0469B /* YDTableTemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18221959BDF00B0469B /* YDTableTemplateConfig.swift */; };
+		5A33E1A121959BDF00B0469B /* YDOrmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18321959BDF00B0469B /* YDOrmItem.swift */; };
+		5A33E1A221959BDF00B0469B /* YDOrmSQLiteOpenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18421959BDF00B0469B /* YDOrmSQLiteOpenHelper.swift */; };
+		5A33E1A321959BDF00B0469B /* YDOrmKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18521959BDF00B0469B /* YDOrmKey.swift */; };
+		5A33E1A421959BDF00B0469B /* YDSQLiteOpenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18621959BDF00B0469B /* YDSQLiteOpenHelper.swift */; };
+		5A33E1A521959BDF00B0469B /* YDOrm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18721959BDF00B0469B /* YDOrm.swift */; };
+		5A33E1A621959BDF00B0469B /* YDOrmSQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18B21959BDF00B0469B /* YDOrmSQLiteDB.swift */; };
+		5A33E1A721959BDF00B0469B /* YDSQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E18D21959BDF00B0469B /* YDSQLiteDB.swift */; };
+		5A33E1A821959BDF00B0469B /* YDOrmSQLUpdateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19021959BDF00B0469B /* YDOrmSQLUpdateBuilder.swift */; };
+		5A33E1A921959BDF00B0469B /* YDOrmSQLSelectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19121959BDF00B0469B /* YDOrmSQLSelectBuilder.swift */; };
+		5A33E1AA21959BDF00B0469B /* YDOrmSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19221959BDF00B0469B /* YDOrmSQLAlterTableBuilder.swift */; };
+		5A33E1AB21959BDF00B0469B /* YDOrmSQLDeleteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19321959BDF00B0469B /* YDOrmSQLDeleteBuilder.swift */; };
+		5A33E1AC21959BDF00B0469B /* YDOrmSQLCreateTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19421959BDF00B0469B /* YDOrmSQLCreateTableBuilder.swift */; };
+		5A33E1AD21959BDF00B0469B /* YDOrmSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19521959BDF00B0469B /* YDOrmSQLInsertBuilder.swift */; };
+		5A33E1AE21959BDF00B0469B /* YDSQLUpdateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19721959BDF00B0469B /* YDSQLUpdateBuilder.swift */; };
+		5A33E1AF21959BDF00B0469B /* YDSQLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19821959BDF00B0469B /* YDSQLBuilder.swift */; };
+		5A33E1B021959BDF00B0469B /* YDSQLCreateTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19921959BDF00B0469B /* YDSQLCreateTableBuilder.swift */; };
+		5A33E1B121959BDF00B0469B /* YDSQLSelectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19A21959BDF00B0469B /* YDSQLSelectBuilder.swift */; };
+		5A33E1B221959BDF00B0469B /* YDSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19B21959BDF00B0469B /* YDSQLInsertBuilder.swift */; };
+		5A33E1B321959BDF00B0469B /* YDSQLSelectTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19C21959BDF00B0469B /* YDSQLSelectTableBuilder.swift */; };
+		5A33E1B421959BDF00B0469B /* YDSQLDeleteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19D21959BDF00B0469B /* YDSQLDeleteBuilder.swift */; };
+		5A33E1B521959BDF00B0469B /* YDSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E19E21959BDF00B0469B /* YDSQLAlterTableBuilder.swift */; };
+		5A4E618321959A8E0092A7CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E618221959A8E0092A7CF /* AppDelegate.swift */; };
+		5A4E618521959A8E0092A7CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E618421959A8E0092A7CF /* ViewController.swift */; };
+		5A4E618A21959A8E0092A7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E618921959A8E0092A7CF /* Assets.xcassets */; };
+		5AC0B897219D597A00B9D865 /* YDString-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0B896219D597A00B9D865 /* YDString-Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A33E17621959BC800B0469B /* YDTableInfo.orm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YDTableInfo.orm.xml; sourceTree = "<group>"; };
+		5A33E17821959BC800B0469B /* YDBuilderSQLController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDBuilderSQLController.swift; sourceTree = "<group>"; };
+		5A33E17A21959BC800B0469B /* YDTableInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTableInfo.swift; sourceTree = "<group>"; };
+		5A33E18021959BDF00B0469B /* YDBaseDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDBaseDao.swift; sourceTree = "<group>"; };
+		5A33E18221959BDF00B0469B /* YDTableTemplateConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTableTemplateConfig.swift; sourceTree = "<group>"; };
+		5A33E18321959BDF00B0469B /* YDOrmItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmItem.swift; sourceTree = "<group>"; };
+		5A33E18421959BDF00B0469B /* YDOrmSQLiteOpenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLiteOpenHelper.swift; sourceTree = "<group>"; };
+		5A33E18521959BDF00B0469B /* YDOrmKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmKey.swift; sourceTree = "<group>"; };
+		5A33E18621959BDF00B0469B /* YDSQLiteOpenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLiteOpenHelper.swift; sourceTree = "<group>"; };
+		5A33E18721959BDF00B0469B /* YDOrm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrm.swift; sourceTree = "<group>"; };
+		5A33E18B21959BDF00B0469B /* YDOrmSQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLiteDB.swift; sourceTree = "<group>"; };
+		5A33E18D21959BDF00B0469B /* YDSQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLiteDB.swift; sourceTree = "<group>"; };
+		5A33E19021959BDF00B0469B /* YDOrmSQLUpdateBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLUpdateBuilder.swift; sourceTree = "<group>"; };
+		5A33E19121959BDF00B0469B /* YDOrmSQLSelectBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLSelectBuilder.swift; sourceTree = "<group>"; };
+		5A33E19221959BDF00B0469B /* YDOrmSQLAlterTableBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLAlterTableBuilder.swift; sourceTree = "<group>"; };
+		5A33E19321959BDF00B0469B /* YDOrmSQLDeleteBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLDeleteBuilder.swift; sourceTree = "<group>"; };
+		5A33E19421959BDF00B0469B /* YDOrmSQLCreateTableBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLCreateTableBuilder.swift; sourceTree = "<group>"; };
+		5A33E19521959BDF00B0469B /* YDOrmSQLInsertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLInsertBuilder.swift; sourceTree = "<group>"; };
+		5A33E19721959BDF00B0469B /* YDSQLUpdateBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLUpdateBuilder.swift; sourceTree = "<group>"; };
+		5A33E19821959BDF00B0469B /* YDSQLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLBuilder.swift; sourceTree = "<group>"; };
+		5A33E19921959BDF00B0469B /* YDSQLCreateTableBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLCreateTableBuilder.swift; sourceTree = "<group>"; };
+		5A33E19A21959BDF00B0469B /* YDSQLSelectBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLSelectBuilder.swift; sourceTree = "<group>"; };
+		5A33E19B21959BDF00B0469B /* YDSQLInsertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLInsertBuilder.swift; sourceTree = "<group>"; };
+		5A33E19C21959BDF00B0469B /* YDSQLSelectTableBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLSelectTableBuilder.swift; sourceTree = "<group>"; };
+		5A33E19D21959BDF00B0469B /* YDSQLDeleteBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLDeleteBuilder.swift; sourceTree = "<group>"; };
+		5A33E19E21959BDF00B0469B /* YDSQLAlterTableBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLAlterTableBuilder.swift; sourceTree = "<group>"; };
+		5A4E617F21959A8E0092A7CF /* YDSQLiteManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDSQLiteManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4E618221959A8E0092A7CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A4E618421959A8E0092A7CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A4E618921959A8E0092A7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A4E618E21959A8E0092A7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AC0B894219D568B00B9D865 /* YDSQLiteManagerBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSQLiteManagerBridging.h; sourceTree = "<group>"; };
+		5AC0B896219D597A00B9D865 /* YDString-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YDString-Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A4E617C21959A8E0092A7CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A33E17421959BC800B0469B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E17521959BC800B0469B /* Config */,
+				5A33E17721959BC800B0469B /* Controller */,
+				5A33E17921959BC800B0469B /* Model */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5A33E17521959BC800B0469B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E17621959BC800B0469B /* YDTableInfo.orm.xml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5A33E17721959BC800B0469B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E17821959BC800B0469B /* YDBuilderSQLController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A33E17921959BC800B0469B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E17A21959BC800B0469B /* YDTableInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A33E17E21959BDF00B0469B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5AC0B895219D593800B9D865 /* Extension */,
+				5AC0B893219D563600B9D865 /* Bridging */,
+				5A33E17F21959BDF00B0469B /* Dao */,
+				5A33E18121959BDF00B0469B /* Utils */,
+				5A33E18821959BDF00B0469B /* DB */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		5A33E17F21959BDF00B0469B /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E18021959BDF00B0469B /* YDBaseDao.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		5A33E18121959BDF00B0469B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E18221959BDF00B0469B /* YDTableTemplateConfig.swift */,
+				5A33E18321959BDF00B0469B /* YDOrmItem.swift */,
+				5A33E18421959BDF00B0469B /* YDOrmSQLiteOpenHelper.swift */,
+				5A33E18521959BDF00B0469B /* YDOrmKey.swift */,
+				5A33E18621959BDF00B0469B /* YDSQLiteOpenHelper.swift */,
+				5A33E18721959BDF00B0469B /* YDOrm.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5A33E18821959BDF00B0469B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E18921959BDF00B0469B /* DB */,
+				5A33E18E21959BDF00B0469B /* SQL */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		5A33E18921959BDF00B0469B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E18A21959BDF00B0469B /* Orm */,
+				5A33E18C21959BDF00B0469B /* Base */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		5A33E18A21959BDF00B0469B /* Orm */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E18B21959BDF00B0469B /* YDOrmSQLiteDB.swift */,
+			);
+			path = Orm;
+			sourceTree = "<group>";
+		};
+		5A33E18C21959BDF00B0469B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E18D21959BDF00B0469B /* YDSQLiteDB.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A33E18E21959BDF00B0469B /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E18F21959BDF00B0469B /* Orm */,
+				5A33E19621959BDF00B0469B /* Base */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
+		5A33E18F21959BDF00B0469B /* Orm */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E19021959BDF00B0469B /* YDOrmSQLUpdateBuilder.swift */,
+				5A33E19121959BDF00B0469B /* YDOrmSQLSelectBuilder.swift */,
+				5A33E19221959BDF00B0469B /* YDOrmSQLAlterTableBuilder.swift */,
+				5A33E19321959BDF00B0469B /* YDOrmSQLDeleteBuilder.swift */,
+				5A33E19421959BDF00B0469B /* YDOrmSQLCreateTableBuilder.swift */,
+				5A33E19521959BDF00B0469B /* YDOrmSQLInsertBuilder.swift */,
+			);
+			path = Orm;
+			sourceTree = "<group>";
+		};
+		5A33E19621959BDF00B0469B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E19721959BDF00B0469B /* YDSQLUpdateBuilder.swift */,
+				5A33E19821959BDF00B0469B /* YDSQLBuilder.swift */,
+				5A33E19921959BDF00B0469B /* YDSQLCreateTableBuilder.swift */,
+				5A33E19A21959BDF00B0469B /* YDSQLSelectBuilder.swift */,
+				5A33E19B21959BDF00B0469B /* YDSQLInsertBuilder.swift */,
+				5A33E19C21959BDF00B0469B /* YDSQLSelectTableBuilder.swift */,
+				5A33E19D21959BDF00B0469B /* YDSQLDeleteBuilder.swift */,
+				5A33E19E21959BDF00B0469B /* YDSQLAlterTableBuilder.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A4E617621959A8E0092A7CF = {
+			isa = PBXGroup;
+			children = (
+				5A4E618121959A8E0092A7CF /* YDSQLiteManager */,
+				5A4E618021959A8E0092A7CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A4E618021959A8E0092A7CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E617F21959A8E0092A7CF /* YDSQLiteManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A4E618121959A8E0092A7CF /* YDSQLiteManager */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E17E21959BDF00B0469B /* Framework */,
+				5A33E17421959BC800B0469B /* Class */,
+				5A4E618221959A8E0092A7CF /* AppDelegate.swift */,
+				5A4E618421959A8E0092A7CF /* ViewController.swift */,
+				5A4E618921959A8E0092A7CF /* Assets.xcassets */,
+				5A4E618E21959A8E0092A7CF /* Info.plist */,
+			);
+			path = YDSQLiteManager;
+			sourceTree = "<group>";
+		};
+		5AC0B893219D563600B9D865 /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				5AC0B894219D568B00B9D865 /* YDSQLiteManagerBridging.h */,
+			);
+			path = Bridging;
+			sourceTree = "<group>";
+		};
+		5AC0B895219D593800B9D865 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5AC0B896219D597A00B9D865 /* YDString-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A4E617E21959A8E0092A7CF /* YDSQLiteManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4E619121959A8E0092A7CF /* Build configuration list for PBXNativeTarget "YDSQLiteManager" */;
+			buildPhases = (
+				5A4E617B21959A8E0092A7CF /* Sources */,
+				5A4E617C21959A8E0092A7CF /* Frameworks */,
+				5A4E617D21959A8E0092A7CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDSQLiteManager;
+			productName = YDSQLiteManager;
+			productReference = 5A4E617F21959A8E0092A7CF /* YDSQLiteManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A4E617721959A8E0092A7CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = rowena;
+				TargetAttributes = {
+					5A4E617E21959A8E0092A7CF = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 5A4E617A21959A8E0092A7CF /* Build configuration list for PBXProject "YDSQLiteManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A4E617621959A8E0092A7CF;
+			productRefGroup = 5A4E618021959A8E0092A7CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A4E617E21959A8E0092A7CF /* YDSQLiteManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A4E617D21959A8E0092A7CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4E618A21959A8E0092A7CF /* Assets.xcassets in Resources */,
+				5A33E17B21959BC800B0469B /* YDTableInfo.orm.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A4E617B21959A8E0092A7CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A33E1B021959BDF00B0469B /* YDSQLCreateTableBuilder.swift in Sources */,
+				5A33E1AC21959BDF00B0469B /* YDOrmSQLCreateTableBuilder.swift in Sources */,
+				5A33E1AD21959BDF00B0469B /* YDOrmSQLInsertBuilder.swift in Sources */,
+				5A33E1AF21959BDF00B0469B /* YDSQLBuilder.swift in Sources */,
+				5A33E1B321959BDF00B0469B /* YDSQLSelectTableBuilder.swift in Sources */,
+				5A4E618521959A8E0092A7CF /* ViewController.swift in Sources */,
+				5A33E1B121959BDF00B0469B /* YDSQLSelectBuilder.swift in Sources */,
+				5A33E1A621959BDF00B0469B /* YDOrmSQLiteDB.swift in Sources */,
+				5A33E17D21959BC800B0469B /* YDTableInfo.swift in Sources */,
+				5A33E17C21959BC800B0469B /* YDBuilderSQLController.swift in Sources */,
+				5A33E1A121959BDF00B0469B /* YDOrmItem.swift in Sources */,
+				5A33E1A821959BDF00B0469B /* YDOrmSQLUpdateBuilder.swift in Sources */,
+				5A33E1A421959BDF00B0469B /* YDSQLiteOpenHelper.swift in Sources */,
+				5A33E1B221959BDF00B0469B /* YDSQLInsertBuilder.swift in Sources */,
+				5A33E1A521959BDF00B0469B /* YDOrm.swift in Sources */,
+				5A33E1AE21959BDF00B0469B /* YDSQLUpdateBuilder.swift in Sources */,
+				5A33E1A021959BDF00B0469B /* YDTableTemplateConfig.swift in Sources */,
+				5A33E1A221959BDF00B0469B /* YDOrmSQLiteOpenHelper.swift in Sources */,
+				5A33E19F21959BDF00B0469B /* YDBaseDao.swift in Sources */,
+				5A33E1A321959BDF00B0469B /* YDOrmKey.swift in Sources */,
+				5A33E1B421959BDF00B0469B /* YDSQLDeleteBuilder.swift in Sources */,
+				5AC0B897219D597A00B9D865 /* YDString-Extension.swift in Sources */,
+				5A33E1AA21959BDF00B0469B /* YDOrmSQLAlterTableBuilder.swift in Sources */,
+				5A33E1AB21959BDF00B0469B /* YDOrmSQLDeleteBuilder.swift in Sources */,
+				5A4E618321959A8E0092A7CF /* AppDelegate.swift in Sources */,
+				5A33E1B521959BDF00B0469B /* YDSQLAlterTableBuilder.swift in Sources */,
+				5A33E1A921959BDF00B0469B /* YDOrmSQLSelectBuilder.swift in Sources */,
+				5A33E1A721959BDF00B0469B /* YDSQLiteDB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A4E618F21959A8E0092A7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A4E619021959A8E0092A7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A4E619221959A8E0092A7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				INFOPLIST_FILE = YDSQLiteManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weixin.wuyezhiguhun.YDSQLiteManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDSQliteManager/Framework/Bridging/YDSQLiteManagerBridging.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5A4E619321959A8E0092A7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				INFOPLIST_FILE = YDSQLiteManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weixin.wuyezhiguhun.YDSQLiteManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDSQliteManager/Framework/Bridging/YDSQLiteManagerBridging.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A4E617A21959A8E0092A7CF /* Build configuration list for PBXProject "YDSQLiteManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4E618F21959A8E0092A7CF /* Debug */,
+				5A4E619021959A8E0092A7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A4E619121959A8E0092A7CF /* Build configuration list for PBXNativeTarget "YDSQLiteManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4E619221959A8E0092A7CF /* Debug */,
+				5A4E619321959A8E0092A7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A4E617721959A8E0092A7CF /* Project object */;
+}
